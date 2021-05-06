@@ -1,8 +1,16 @@
-//We need a function that can transform a string into a number. What ways of achieving this do you know?
+/* An AI has infected a text with a character!!
 
-//Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+This text is now fully mutated to this character.
 
-var stringToNumber = function (str) {
-  // put your code here
-  return Number(str);
-};
+If the text or the character are empty, return an empty string.
+There will never be a case when both are empty as nothing is going on!!
+
+Note: The character is a string of length 1 or an empty string.
+
+text before = "abc"
+character   = "z"
+text after  = "zzz" */
+
+const contamination = (text, char) => char.repeat(text.length);
+
+console.log(contamination("rergadsf", "r"));
