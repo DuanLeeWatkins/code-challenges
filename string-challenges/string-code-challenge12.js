@@ -18,12 +18,17 @@ P. S. You can use \n in string to jump to the next line.
 Note: newlines should be added between rows, but there should be no trailing newline at the end. */
 
 const multiTable = (number) => {
+    //variable that holds the results
     let table = '';
-
+    //Loops through numbers 1-10
     for (let i = 1; i <= 10; i++) {
+        ///The result is placed inside a template literal
+        //The given index mulitpled by the number equals the result
+        //If the index is less than 10 then a new line will be created under else it will be empty string.
+        //The result is stored in the table variable
         table += `${i} * ${number} = ${i * number}${i < 10 ? '\n' : ''}`
     }
-
+    //Table is returned
     return table;
 }
 
