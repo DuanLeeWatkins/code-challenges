@@ -10,6 +10,9 @@ Sam Harris => S.H
 Patrick Feeney => P.F */
 
 function abbrevName(name) {
+  //Declare a variable called nameArray and assign it to name.split(" ")
+  //name.split(" ") separates the first name and last name and puts them in an array
   let nameArray = name.split(" ");
+  // Returns the first character of the first element with a dot separating the second elements first character in uppercase.
   return (nameArray[0][0] + "." + nameArray[1][0]).toLocaleUpperCase();
 }
