@@ -9,11 +9,14 @@ DNAStrand ("ATTGC") // return "TAACG"
 DNAStrand ("GTAT") // return "CATA"  */
 
 function DNAStrand(dna) {
+// Returns a new dna string with the replaced characters
+//The replacing characters are the values in the DNAStrand.pairs object
     return dna.replace(/./g, function (c) {
-        return DNAStrand.pairs[c]
+        return DNAStrand.pairs.c
     })
 }
 
+//The DNAStand.pairs object with the DNA pairs
 DNAStrand.pairs = {
     A: 'T',
     T: 'A',

@@ -13,6 +13,8 @@ There will always be at least one number in the input string.
 Output string must be two numbers separated by a single space, and highest number is first. */
 
 function highAndLow(numbers) {
+// Declares numbers variable and stores the array with numbers in it.
     numbers = numbers.split(' ').map(Number);
+//Returns the max number from the array separated by a space and the min number.
     return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
 }
