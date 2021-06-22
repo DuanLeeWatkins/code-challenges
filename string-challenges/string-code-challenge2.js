@@ -4,5 +4,6 @@
 
 var stringToNumber = function (str) {
   // put your code here
+//Number converts a string or other value to a Number type.
   return Number(str);
 };
