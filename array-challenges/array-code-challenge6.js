@@ -6,7 +6,11 @@ sayHello(['John', 'Smith'], 'Phoenix', 'Arizona')
 
 This example will return the string Hello, John Smith! Welcome to Phoenix, Arizona!
 */
-
+//Create a function with the name (array), city, and state as parameters.
+//Create a template literal
+//The name array's elements are joined together with a space
+//The city and state parameters are placed inside the template literal
+//The template literal is returned
 function sayHello(name, city, state) {
   return `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`;
 }

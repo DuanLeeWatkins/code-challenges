@@ -9,9 +9,13 @@ Can you figure out what's wrong here? */
   args[1] = temp;
 } */
 
+//Created a function with the array as the parameter
 
 function swapValues(arr) {
+  // Declare a temp variable that is assigned to the first index in the array
   var temp = arr[0];
+  //Index 0 has the value of index 1
   arr[0] = arr[1];
+  //Index 1 has the value of the varible temp
   arr[1] = temp;
 }
