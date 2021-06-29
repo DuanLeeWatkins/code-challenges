@@ -15,6 +15,11 @@ Output string must be two numbers separated by a single space, and highest numbe
 function highAndLow(numbers) {
 // Declares numbers variable and stores the array with numbers in it.
     numbers = numbers.split(' ').map(Number);
+    //Create variables to store the max and min numbers
+    const maxNum = Math.max.apply(0, numbers);
+    const minNum = Math.min.apply(0, numbers);
 //Returns the max number from the array separated by a space and the min number.
-    return Math.max.apply(0, numbers) + ' ' + Math.min.apply(0, numbers);
+    return `${maxNum} ${minNum}`
 }
+
+console.log(highAndLow('34 55 2223 77 88 34343'))
