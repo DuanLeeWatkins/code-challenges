@@ -14,3 +14,7 @@ Output: "odd"
 
 Input: [0, -1, -5]
 Output: "even" */
+
+const oddOrEven = arr => {
+    return arr.reduce((a, b) => a + b, 0) % 2 ? 'odd' : 'even';
+}
