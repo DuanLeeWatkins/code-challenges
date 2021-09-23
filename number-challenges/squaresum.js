@@ -8,11 +8,6 @@ function squareSum(arr) {
     //add up all the elements and return the sum.
     //9
 
-    /* return arr.reduce(function (sum, n) {
-        return (n * n) + sum;
-    }, 0)
-     */
-
     let results = 0;
 
     for (let i = 0; i < arr.length; i++){
