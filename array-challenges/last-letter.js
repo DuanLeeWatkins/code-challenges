@@ -1,4 +1,3 @@
-
 /* 
 Description
 You are given a string of letters and an array of numbers.
@@ -21,16 +20,17 @@ There can be duplicate letters and numbers. */
 //parameters are the string of letters and the array of numbers
 
 function lastLetter(letters, coords) {
-    letters = letters.split('')
-    
-    for (let i = 0; i < coords.length; i++) {
-        letters.splice(coords[i], 1)
-    }
+  letters = letters.split("");
 
-    return letters.join('')
+  for (let i = 0; i < coords.length; i++) {
+    letters.splice(coords[i], 1);
+  }
 
+  return letters.join("");
 }
 
-console.log(lastLetter('wert', [0, 1, 2]), 'et')
+console.log(lastLetter("wert", [0, 1, 2]), "et");
 console.log(lastLetter("wertew", [0, 1, 2, 3, 4]), "etw");
 console.log(lastLetter("w", []), "w");
+
+
