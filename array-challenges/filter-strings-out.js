@@ -2,7 +2,7 @@
 
 function filterList(arr) {
   return arr.filter(function (v) {
-    return typeof v == "number";
+    return typeof v === "number";
   });
 }
 
