@@ -10,7 +10,8 @@ repeats([5, 10, 19, 13, 10, 13]),24) */
 
 
 function sumOfSingles(arr) {
-
+//Filters the numbers that occur once by making sure the index of the element equals the last index of the element. ex: index of 7 in test 1 is 2 equals last index of 7 which is 2.
+//Once the filter array is created, then the numbers are added together to get the sum using reduce
     return arr.filter(x => arr.indexOf(x) === arr.lastIndexOf(x)).reduce((a,b) => a + b)
     
 }

@@ -16,5 +16,9 @@ Input: [0, -1, -5]
 Output: "even" */
 
 const oddOrEven = arr => {
-    return arr.reduce((a, c) => a + c, 0) % 2 ? 'odd' : 'even';
+    return arr.reduce((a, c) => a + c, 0) % 2 === 0 ? 'even' : 'odd';
 }
+
+console.log(oddOrEven([3, 2, 6, 45,]), "even")
+console.log(oddOrEven([0, 10, 23, 45]), "even");
+console.log(oddOrEven([-1, 34, 6, 56],), "odd");
