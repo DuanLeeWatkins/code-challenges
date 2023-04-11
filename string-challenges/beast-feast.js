@@ -18,9 +18,8 @@ Assume that beast and dish are always lowercase strings, and that each has at le
 
 function feast(beast, dish) {
   return (
-    
     //If the first index value of beast equals the first index value of dish and the last index value of beast equals the last index value of dish return true else false.
-    (beast[0] === dish[0] && beast[beast.length - 1]) === dish[dish.length - 1]
+    beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
   );
 }
 
