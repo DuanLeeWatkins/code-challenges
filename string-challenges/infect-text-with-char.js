@@ -11,7 +11,7 @@ text before = "abc"
 character   = "z"
 text after  = "zzz" */
 
-//Arrow function contamination is delcared and assigned with the parameters of text and char
+//Arrow function contamination is declared and assigned with the parameters of text and char
 //Using the repeat method, the char will be repeated a number of times based on the text length
 const contamination = (text, char) => char.repeat(text.length);
 

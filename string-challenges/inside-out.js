@@ -40,7 +40,7 @@ function insideOut(x) {
         let right = x
           .substring(Math.ceil(x.length / 2))
           .split("")
-          .reverse("")
+          .reverse()
           .join("");
         // the middle variable stores the middle letter of each word.
         let middle = x[Math.floor(x.length / 2)];
