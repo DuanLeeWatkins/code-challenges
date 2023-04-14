@@ -2,7 +2,7 @@
 
 nameShuffler('john McClane'); => "McClane john" */
 
-function nameSuffle(str) {
+function nameShuffle(str) {
 //Returns the string split into an array of ordered substrings
 //The array is reversed
 //Finally the array is returned as a string
